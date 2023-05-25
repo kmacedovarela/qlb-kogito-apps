@@ -409,8 +409,8 @@
         <dmn:outputEntry id="_6CF35928-D05A-4E52-AF73-CCA0B6BF2251">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
-        <dmn:outputEntry id="_F4092B47-1922-42B1-A636-459CDFAA563E">
-          <dmn:text>"Insufficient credit score (min required is 350)"</dmn:text>
+        <dmn:outputEntry id="_2B0ACED5-8438-4657-A405-25963EABEDCA">
+          <dmn:text>"Insufficient credit score (min required is 300)"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
