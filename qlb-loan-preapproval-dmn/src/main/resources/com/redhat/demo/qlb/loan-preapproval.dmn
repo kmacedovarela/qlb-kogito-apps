@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <dmn:definitions xmlns:dmn="http://www.omg.org/spec/DMN/20180521/MODEL/" xmlns="http://www.qlb.com/dmn/_96E3B174-69BB-4689-A66B-3A8DAA10D45D" xmlns:di="http://www.omg.org/spec/DMN/20180521/DI/" xmlns:kie="http://www.drools.org/kie/dmn/1.2" xmlns:dmndi="http://www.omg.org/spec/DMN/20180521/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:feel="http://www.omg.org/spec/DMN/20180521/FEEL/" id="_B102896E-9F4B-4CC0-B718-AD7F8CB45CFA" name="loan-preapproval" expressionLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" typeLanguage="http://www.omg.org/spec/DMN/20180521/FEEL/" namespace="http://www.qlb.com/dmn/_96E3B174-69BB-4689-A66B-3A8DAA10D45D">
   <dmn:extensionElements/>
   <dmn:itemDefinition id="_C2F05AD7-1D7B-4BA4-B5EA-910EF2B6CD60" name="tApplicant" isCollection="false">
@@ -395,29 +396,21 @@
           <dmn:text>Applicant.Credit Score</dmn:text>
         </dmn:inputExpression>
       </dmn:input>
-      <dmn:output id="_70EA5D1F-9D2D-4BC5-A7E2-6D4A5109F273" name="Result" typeRef="boolean">
-        <dmn:defaultOutputEntry id="_657569A3-F4F3-46AF-AD41-E057E0097D3F">
-          <dmn:text>true</dmn:text>
-        </dmn:defaultOutputEntry>
-      </dmn:output>
-      <dmn:output id="_0E2DACC1-D4F2-47C1-992C-497536DCBCB3" name="Rejection Reasons" typeRef="string">
-        <dmn:defaultOutputEntry id="_AA2E9D97-5116-4F30-B2FF-2C78A561FD29">
-          <dmn:text>""</dmn:text>
-        </dmn:defaultOutputEntry>
-      </dmn:output>
+      <dmn:output id="_70EA5D1F-9D2D-4BC5-A7E2-6D4A5109F273" name="Result" typeRef="boolean"/>
+      <dmn:output id="_0E2DACC1-D4F2-47C1-992C-497536DCBCB3" name="Rejection Reasons" typeRef="string"/>
       <dmn:annotation name=""/>
       <dmn:rule id="_85C7544A-950A-4913-B8A5-92F0897CD7D7">
         <dmn:inputEntry id="_2F236732-DDF7-48FE-91BD-9512794EEE7B">
           <dmn:text>-</dmn:text>
         </dmn:inputEntry>
-        <dmn:inputEntry id="_A6BDC8DD-D2A0-4D4D-BD62-C5B1E75CA312">
-          <dmn:text>&lt; 300</dmn:text>
+        <dmn:inputEntry id="_D24C76AD-7005-49F1-B23D-3D0C4DA6A1A0">
+          <dmn:text>&lt; 350</dmn:text>
         </dmn:inputEntry>
         <dmn:outputEntry id="_6CF35928-D05A-4E52-AF73-CCA0B6BF2251">
           <dmn:text>false</dmn:text>
         </dmn:outputEntry>
-        <dmn:outputEntry id="_5DD10275-8F8E-4E22-8F91-AB7FD3B83A5A">
-          <dmn:text>"Insufficient credit score (min required is 300)"</dmn:text>
+        <dmn:outputEntry id="_F4092B47-1922-42B1-A636-459CDFAA563E">
+          <dmn:text>"Insufficient credit score (min required is 350)"</dmn:text>
         </dmn:outputEntry>
         <dmn:annotationEntry>
           <dmn:text/>
